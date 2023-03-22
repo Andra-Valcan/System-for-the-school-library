@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Autentificare</title>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="title">
+    STUed
+  </div>
+  <form [formGroup]="login" (ngSubmit)="checkEmail()">
+
+    <div class="field">
+      <input type="text" name="email" formControlName="email">
+      <label>Adresa de email</label>
+    </div>
+    <div class="field">
+      <input type="password" name="password" formControlName="password">
+      <label>Parola</label>
+    </div>
+    <div class="content">
+
+    </div>
+    <div class="field">
+      <input  type="submit" value="Autentificare">
+    </div>
+  </form>
+</div>
+</body>
+</html>
